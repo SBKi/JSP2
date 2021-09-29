@@ -4,22 +4,19 @@ import java.sql.Timestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-
-public class Freeboard {
+public class Comment {
 	private int idx;
+	private int mref;
 	private String name;
 	private String password;
-	private String subject;
 	private String content;
-	private int readCount;
 	private Timestamp wdate;
 	private String ip;
-	private short commentCount;
 }
